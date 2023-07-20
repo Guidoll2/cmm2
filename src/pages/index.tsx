@@ -9,7 +9,7 @@ export default function Home() {
       className={`absolute w-full flex-col items-center justify-between ${inter.className}`} 
     > 
     
-  <div className="static w-[3000px] h-[600px] place-items-center bg-cyan-900 max-[720px]:h-[2700px]">
+  <div className="static w-[3000px] h-[600px] place-items-center bg-cyan-900 max-[720px]:h-[4000px]">
   
   <nav id="home" className="static h-[100px] max-[720px]:bg-gray-700 max-[720px]:h-[400px]">
      {/** <div className="relative">
@@ -25,7 +25,7 @@ export default function Home() {
      <div className="static bg-white-200 bottom-[0px] w-[300px] h-[180px]">
       <a href="#destino-somos">
         <Image
-          className="absolute top-[10px] left-[250px] rounded-[100px] bg-white-200 w-[900px] h-[600px] max-[720px]:top-[100px] max-[720px]:left-[650px] max-[720px]:h-[900px]"
+          className="absolute top-[10px] left-[250px] rounded-[100px] bg-white-200 w-[900px] h-[600px] max-[720px]:top-[1500px] max-[720px]:left-[1100px] max-[720px]:h-[900px]"
           src="/logosvg.svg"
           alt="CMM Logo"
           width={0}
@@ -38,17 +38,17 @@ export default function Home() {
     <span className="relative left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-family-raleway text-5xl text-black-300 text-[90px]">
       {' '}
     </span>
-    <span className="relative left-[50px] transform -translate-x-1/2 bottom-[170px] text-[80px] max-[720px]:text-[200px] text-black-200 font-light font-roboto max-[720px]:left-[600px] max-[720px]:font-light max-[720px]:text-cyan-600">
+    <span className="relative left-[50px] transform -translate-x-1/2 bottom-[170px] text-[80px] max-[720px]:text-[250px] text-black-200 font-light font-roboto max-[720px]:left-[500px] max-[720px]:text-cyan-600">
       CMM
     </span>
-    <span className="relative text-[20px] bottom-[140px] right-[200px] text-black-200 max-[720px]:text-[60px] max-[720px]:right-[40px] max-[720px]:bottom-[100px] max-[720px]:font-semibold">
+    <span className="relative text-[20px] bottom-[140px] right-[200px] text-black-200 max-[720px]:text-[100px] max-[720px]:left-[750px] max-[720px]:bottom-[200px] max-[720px]:font-semibold">
       SEGURIDAD ELECTRONICA.
     </span>
 
     <div className="relative bottom-[0px] top-[200px]">
       <div
         id="ICONO-ALARMAS"
-        className="scroll-smooth relative w-[120px] h-[120px] bottom-[200px] left-[60px] opacity-50 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:top-[200px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[200px]"
+        className="scroll-smooth relative w-[120px] h-[120px] bottom-[200px] left-[60px] opacity-50 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:top-[100px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[200px]"
       >
         <a href="#alarmasmonitoreadasdetail" className="scroll-smooth">
           <span className="relative h-[100px] w-[45px] top-[10px] left-[20px] inline-block transition-transform motion-reduce:transform-none max-[720px]:w-[200px] max-[720px]:top-[50px] max-[720px]:left-[90px]">
@@ -75,7 +75,7 @@ export default function Home() {
 
       <div
         id="ICONO-CAMARAS"
-        className="relative w-[120px] h-[120px] bottom-[320px] left-[260px] transition ease-in-out delay-150 bg-indigo-200 opacity-60 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:top-[600px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[200px] "
+        className="relative w-[120px] h-[120px] bottom-[320px] left-[260px] transition ease-in-out delay-150 bg-indigo-200 opacity-60 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:top-[1800px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[200px] "
       >
         <a href="#camarasdetail">
           <span className="relative h-[100px] w-[45px] top-[10px] left-[20px] inline-block transition-transform motion-reduce:transform-none max-[720px]:w-[200px] max-[720px]:top-[50px] max-[720px]:left-[90px]">
@@ -102,7 +102,7 @@ export default function Home() {
 
       <div
         id="ICONO-CONTACTO"
-        className="relative w-[120px] h-[120px] bottom-[440px] left-[950px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:bottom-[600px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[1000px]"
+        className="relative w-[120px] h-[120px] bottom-[440px] left-[950px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:bottom-[700px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[2200px]"
       >
         <a href="#contactodetail">
           <span className="relative h-[100px] w-[45px] top-[10px] left-[20px] inline-block max-[720px]:w-[200px] max-[720px]:top-[50px] max-[720px]:left-[90px]">
@@ -125,10 +125,10 @@ export default function Home() {
 
       <div
         id="ICONO-TIENDA"
-        className="relative w-[120px] h-[120px] left-[1150px] bottom-[560px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:bottom-[200px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[1000px]"
+        className="relative w-[120px] h-[120px] left-[1150px] bottom-[560px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:top-[1000px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[2200px]"
       >
         <a href="#tiendavirtual">
-          <span className="relative h-[100px] w-[45px] top-[18px] left-[15px] inline-block max-[420px]:w-[200px] max-[420px]:top-[50px] max-[420px]:left-[90px] ">
+          <span className="relative h-[100px] w-[45px] top-[18px] left-[15px] inline-block max-[720px]:w-[200px] max-[720px]:top-[50px] max-[720px]:left-[90px] ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
