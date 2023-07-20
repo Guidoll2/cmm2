@@ -6,49 +6,49 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main
-      className={`absolute w-[200px] flex-col items-center justify-between ${inter.className}`} 
+      className={`absolute w-full flex-col items-center justify-between ${inter.className}`} 
     > 
     
-    <div className="relative w-full h-[400px] place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-  {/** */}
-  <nav id="home" className="relative h-[600px] w-screen">
-    <div className="relative">
+  <div className="static w-[3000px] h-[600px] place-items-center bg-cyan-900 grid-flow-row">
+  
+  <nav id="home" className="static h-[100px]">
+     {/** <div className="relative">
       <Image
-        className="absolute h-[600px]"
+        className="absolute h-[600px] "
         src="/fondocheto.jpg"
         alt="fondogalactico"
-        width={1350}
+        width={5000}
         height={0}
       />
-    </div>
+    </div> */}
 
-    <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[200px] w-[300px] h-[180px] opacity-80 dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-[100px] dark:invert transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300">
+     <div className="static bg-white-200 bottom-[0px] w-[300px] h-[180px] opacity-80">
       <a href="#destino-somos">
         <Image
-          className="relative top-[35px] left-[3px]"
-          src="/logosinfondo.png"
+          className="absolute top-[10px] left-[250px] rounded-[100px] bg-white-200 w-[900px] h-[600px]"
+          src="/logosvg.svg"
           alt="CMM Logo"
-          width={250}
+          width={0}
           height={0}
           priority
         />
       </a>
-    </div>
+    </div> 
 
     <span className="relative left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-family-raleway text-5xl text-black-300 text-[90px]">
       {' '}
     </span>
-    <span className="relative left-[20px] transform -translate-x-1/2 bottom-[0px] text-slate-100 text-[100px] text-black font-light font-roboto">
+    <span className="relative left-[50px] transform -translate-x-1/2 bottom-[170px] text-[100px] text-black-200 font-light font-roboto">
       CMM
     </span>
-    <span className="relative text-[25px] top-[40px] right-[200px] text-zinc-200">
+    <span className="relative text-[20px] bottom-[140px] right-[200px] text-black-200">
       SEGURIDAD ELECTRONICA.
     </span>
 
-    <div className="relative bottom-[0px] top-[200px] grid grid-cols-1 gap-4 text-center lg:grid-cols-4 lg:text-left">
+    <div className="relative bottom-[0px] top-[200px]">
       <div
         id="ICONO-ALARMAS"
-        className="scroll-smooth relative w-[120px] h-[120px] bottom-[60px] left-[100px] opacity-30 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-90 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 dark:border-neutral-700 dark:bg-neutral-800/30"
+        className="scroll-smooth relative w-[120px] h-[120px] bottom-[200px] left-[60px] opacity-50 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200"
       >
         <a href="#alarmasmonitoreadasdetail" className="scroll-smooth">
           <span className="relative h-[100px] w-[45px] top-[10px] left-[20px] inline-block transition-transform motion-reduce:transform-none">
@@ -75,7 +75,7 @@ export default function Home() {
 
       <div
         id="ICONO-CAMARAS"
-        className="relative w-[120px] h-[120px] transition ease-in-out delay-150 bg-indigo-200 opacity-30 hover:-translate-y-1 hover:scale-110 hover:opacity-90 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 dark:border-neutral-700 dark:bg-neutral-800/30"
+        className="relative w-[120px] h-[120px] bottom-[320px] left-[260px] transition ease-in-out delay-150 bg-indigo-200 opacity-60 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200"
       >
         <a href="#camarasdetail">
           <span className="relative h-[100px] w-[45px] top-[10px] left-[20px] inline-block transition-transform motion-reduce:transform-none">
@@ -102,7 +102,7 @@ export default function Home() {
 
       <div
         id="ICONO-CONTACTO"
-        className="relative w-[120px] h-[120px] bottom-[60px] left-[150px] opacity-30 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-90 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 dark:border-neutral-700 dark:bg-neutral-800/30"
+        className="relative w-[120px] h-[120px] bottom-[440px] left-[950px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200"
       >
         <a href="#contactodetail">
           <span className="relative h-[100px] w-[45px] top-[10px] left-[20px] inline-block">
@@ -125,7 +125,7 @@ export default function Home() {
 
       <div
         id="ICONO-TIENDA"
-        className="relative w-[120px] h-[120px] left-[50px] opacity-30 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-90 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 dark:border-neutral-700 dark:bg-neutral-800/30"
+        className="relative w-[120px] h-[120px] left-[1150px] bottom-[560px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200"
       >
         <a href="#tiendavirtual">
           <span className="relative h-[100px] w-[45px] top-[18px] left-[15px] inline-block">
@@ -338,7 +338,7 @@ export default function Home() {
     Quienes somos:{' '}
   </h2>
   <p className='relative text-justify font-sans top-[20px] w-[1000px] left-[40px]'>
-    Desde hace más de 10 años, CMM ha estado brindando servicios de seguridad electrónica en nuestro pueblo, San Miguel del Monte. Lo que en un principio fue un servicio dirigido a casas de fin de semana, hoy se ha convertido en una necesidad cada vez más demandada que nos ha impulsado a mejorar nuestra oferta. 
+    Desde hace 10 años, CMM ha estado brindando servicios de seguridad electrónica en nuestro pueblo, San Miguel del Monte. Lo que en un principio fue un servicio dirigido a casas de fin de semana, hoy se ha convertido en una necesidad cada vez más demandada que nos ha impulsado a mejorar nuestra oferta. 
     Hemos ampliado nuestra presencia para acercarnos a las localidades vecinas de Cañuelas y Lobos, incorporando los conocimientos y la tecnología necesarios para enfrentar los nuevos desafíos que presenta la sociedad.
     A lo largo de los años, nos hemos capacitado para poder ofrecerte el mejor servicio al mejor costo, manteniendo la calidez y cercanía que nos caracterizan. En la actualidad, contamos con la estructura y los conocimientos necesarios para proteger tu hogar, comercio o industria. No dudes en contactarnos, estamos cerca tuyo para asesorarte.
   </p>
