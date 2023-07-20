@@ -25,7 +25,7 @@ export default function Home() {
      <div className="static bg-white-200 bottom-[0px] w-[300px] h-[180px]">
       <a href="#destino-somos">
         <Image
-          className="absolute top-[10px] left-[250px] rounded-[100px] bg-white-200 w-[900px] h-[600px] max-[720px]:top-[1500px] max-[720px]:left-[1100px] max-[720px]:h-[900px]"
+          className="absolute top-[10px] left-[250px] rounded-[100px] bg-white-200 w-[900px] h-[600px] max-[720px]:top-[1500px] max-[720px]:left-[850px] max-[720px]:h-[900px]"
           src="/logosvg.svg"
           alt="CMM Logo"
           width={0}
@@ -38,10 +38,10 @@ export default function Home() {
     <span className="relative left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-family-raleway text-5xl text-black-300 text-[90px]">
       {' '}
     </span>
-    <span className="relative left-[50px] transform -translate-x-1/2 bottom-[170px] text-[80px] max-[720px]:text-[250px] text-black-200 font-light font-roboto max-[720px]:left-[500px] max-[720px]:text-cyan-600">
+    <span className="relative left-[50px] transform -translate-x-1/2 bottom-[170px] text-[80px] max-[720px]:text-[250px] text-black-200 font-light font-roboto max-[720px]:left-[100px] max-[720px]:text-cyan-600">
       CMM
     </span>
-    <span className="relative text-[20px] bottom-[140px] right-[200px] text-black-200 max-[720px]:text-[100px] max-[720px]:left-[750px] max-[720px]:bottom-[200px] max-[720px]:font-semibold">
+    <span className="relative text-[20px] bottom-[140px] right-[200px] text-black-200 max-[720px]:text-[90px] max-[720px]:left-[150px] max-[720px]:bottom-[200px] max-[720px]:font-semibold">
       SEGURIDAD ELECTRONICA.
     </span>
 
@@ -102,7 +102,7 @@ export default function Home() {
 
       <div
         id="ICONO-CONTACTO"
-        className="relative w-[120px] h-[120px] bottom-[440px] left-[950px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:bottom-[700px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[2200px]"
+        className="relative w-[120px] h-[120px] bottom-[440px] left-[950px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:bottom-[700px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[1500px]"
       >
         <a href="#contactodetail">
           <span className="relative h-[100px] w-[45px] top-[10px] left-[20px] inline-block max-[720px]:w-[200px] max-[720px]:top-[50px] max-[720px]:left-[90px]">
@@ -125,7 +125,7 @@ export default function Home() {
 
       <div
         id="ICONO-TIENDA"
-        className="relative w-[120px] h-[120px] left-[1150px] bottom-[560px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:top-[1000px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[2200px]"
+        className="relative w-[120px] h-[120px] left-[1150px] bottom-[560px] opacity-60 transition ease-in-out delay-150 bg-indigo-200 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[60px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200 max-[720px]:top-[1000px] max-[720px]:w-[400px] max-[720px]:h-[400px] max-[720px]:rounded-[200px] max-[720px]:left-[1500px]"
       >
         <a href="#tiendavirtual">
           <span className="relative h-[100px] w-[45px] top-[18px] left-[15px] inline-block max-[720px]:w-[200px] max-[720px]:top-[50px] max-[720px]:left-[90px] ">
@@ -353,8 +353,8 @@ export default function Home() {
 
 
 
-<footer className="fixed flex items-center justify-center bottom-0 mt-30 left-0 w-full h-6 border-t bg-gradient-to-r from-blue-500 to-white-500 max-[320px]:h-[100px]">
-  <p className="text-black-500 max-[320px]:text-[40px]">© 2023 CMM. San Miguel del Monte - Cañuelas - Lobos.</p>
+<footer className="fixed flex items-center justify-center bottom-0 mt-30 left-0 w-full h-6 border-t bg-gradient-to-r from-blue-500 to-white-500 max-[720px]:h-[100px]">
+  <p className="text-black-500 max-[720px]:text-[40px]">© 2023 CMM. San Miguel del Monte - Cañuelas - Lobos.</p>
   <span className='ml-2'>
     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
       <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
