@@ -56,11 +56,11 @@ export default function Home() {
 </div> 
 
 <div id="ICONO-ALARMAS"
-        className="absolute top-[150px] shadow-xl bg-cyan-800 w-[100px] rounded-r-[100px] h-[100px]"
+        className="absolute top-[150px] left-10 shadow-xl bg-white w-[100px] rounded-[100px] h-[100px]"
       >
            
         <a href="#CONTENEDORDETALLEALARMA" className="">
-          <span  className="flex ml-5 mt-4" >
+          <span  className="flex ml-8 mt-4" >
           <Image
           className=""
           src="/alarma2.svg"
@@ -71,7 +71,7 @@ export default function Home() {
         />
           </span>
 
-           <h2 className={`text-[15px] ml-3 mt-1 font-light text-sky-300`}>
+           <h2 className={`text-[15px] ml-6 mt-1 font-light text-black`}>
             Alarmas
           </h2>
         </a>
@@ -79,10 +79,10 @@ export default function Home() {
       
       <div
         id="ICONO-CAMARAS"
-        className="absolute w-[100px] h-[100px] top-[350px] bg-cyan-800 to-stone-700 rounded-r-[100px]"
+        className="absolute w-[100px] left-10 h-[100px] top-[350px] bg-white to-stone-700 rounded-[100px]"
       >
         <a href="#CONTENEDORDETALLECCTV">
-          <span className="flex mt-4 ml-5">
+          <span className="flex mt-4 ml-7">
           <Image
           className=""
           src="/cctv.svg"
@@ -96,7 +96,7 @@ export default function Home() {
 
           <h2
             id="ICONO-CAMARAS"
-            className={`flex ml-5 mt-1 text-[18px] font-light text-sky-300`}
+            className={`flex ml-7 mt-1 text-[18px] font-light text-black`}
           >
             CCTV
           </h2>
@@ -114,7 +114,7 @@ export default function Home() {
     
         <div
         id="ICONO-CONTACTO"
-        className="absolute right-0 top-[150px] w-[100px] h-[100px] shadow-xl transition ease-in-out delay-150 bg-stone-800 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-l-[100px] border-indigo-900 px-5 py-4"
+        className="absolute right-10 top-[150px] w-[100px] h-[100px] shadow-xl transition ease-in-out delay-150 bg-stone-800 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[100px] border-indigo-900 px-5 py-4"
       >
         <a href="#CONTENEDORDETALLECONTACTO">
           <span className="flex ml-1">
@@ -139,7 +139,7 @@ export default function Home() {
 
       <div
         id="ICONO-TIENDA"
-        className="absolute right-0 top-[350px] w-[100px] h-[100px] bg-stone-800 rounded-l-[100px]"
+        className="absolute right-10 top-[350px] w-[100px] h-[100px] bg-stone-800 rounded-[100px]"
       >
         <a href="#tiendavirtual">
           <span className="absolute top-[15px] left-[25px]">
@@ -161,36 +161,45 @@ export default function Home() {
           </h2>
         </a>
       </div>
-      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[1000px] w-screen shadow-2xl bg-white text-[20px] h-[340px] scroll-smooth'>
+      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[1000px] w-screen shadow-2xl bg-white text-[20px] h-[450px] scroll-smooth'>
 <h1 className='font-semibold indent-2.5 text-center font-fira-sans'>Monitoreo de alarmas</h1>
 <h2 className='font-light indent-2.5 text-center text-[15px]'>Como funciona?</h2>
 <span className='text-[13px]'>
-<ul className='p-2 list-disc list-inside font-mono'>
+<ul className='p-4 space-y-5 list-disc list-inside font-mono'>
   <li>
-    Conectamos tu equipo de alarma a nuestra central.
+    Instalamos y conectamos tu equipo de alarma a nuestra central.
   </li>
   <li>
-    Monitoreamos los eventos las 24 horas del dia.
+    Monitoreamos y operamos los eventos las 24 horas del dia.
   </li>
   <li>
-    Nuestros operadores .
+    Nuestros operadores se ponen en contacto con las fuerzas de seguridad y/o emergencia.
   </li>
   <li>
-    Nos comunicamos con las fuerzas de seguridad y/o emergencia.
+    Incluye APP donde vas a poder ver el estado de tu alarma, armar y desarmar tu sistema.
   </li>
-  <li>
-    Obtenes acceso a nuestra APP de control y seguridad.
-  </li>
-  
-  <li> Costo mensual aproximado servicio residencial: $7000.- (IVA incluido) </li>
+  <li> Costo mensual aproximado servicio residencial: <span className='font-extrabold'>$7000.- (IVA incluido) </span></li>
 </ul>
 
 </span>
 <span className=''>
 <a href='#CONTENEDORPRINCIPAL' >
 <Image
-          className="absolute right-0"
-          src="/flecha-up.svg"
+          className="absolute left-4 bottom-2"
+          src="/flecha-arriba.svg"
+          alt="flechaup"
+          
+          width={30}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+<span className=''>
+<a href='#CONTENEDORDETALLECCTV' >
+<Image
+          className="absolute right-2 bottom-2"
+          src="/flecha-abajo.svg"
           alt="flechaup"
           
           width={30}
@@ -200,21 +209,21 @@ export default function Home() {
         </a>
 </span>
     </div>
-    <div id='CONTENEDORDETALLECCTV' className='absolute top-[1500px] w-screen bg-gradient-to-b from-sky-700 to-teal-600 text-[20px] h-[250px] scroll-smooth'>
-<h1 className='text-center font-semibold'>Camaras de seguridad:</h1>
+    <div id='CONTENEDORDETALLECCTV' className='absolute top-[1500px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
+<h1 className='relative top-6 text-center font-semibold'>Camaras de seguridad:</h1>
 <span className='text-[13px]'>
-<ul className='list-disc list-inside indent-2.5'>
+<ul className='relative top-10 space-y-5 list-disc list-inside font-mono'>
   <li>
   Instalamos equipos nuevos y/o adaptamos el tuyo.
   </li>
   <li>
-  Visualización en vivo y grabación las 24 horas. (Requiere internet)
+  Incluye APP para visualización en vivo y/o acceso a grabaciones. (Requiere internet)
   </li>
   <li>
-  Incluye APP de control, acceso a grabaciones, control remoto de cámaras (Depende del modelo)
+  Ideal para control de empleados, procesos productivos y/o industriales.
   </li>
   <li>
-  Sin costo mensual.
+  Sin costo mensual
   </li>
   
 </ul>
@@ -223,8 +232,21 @@ export default function Home() {
 <span className=''>
 <a href='#CONTENEDORPRINCIPAL' >
 <Image
-          className="absolute right-0"
-          src="/flecha-up.svg"
+          className="absolute left-4 bottom-2 "
+          src="/flecha-arriba.svg"
+          alt="flechaup"
+          
+          width={30}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+<span className=''>
+<a href='#CONTENEDORDETALLECONTACTO' >
+<Image
+          className="absolute right-2 bottom-2"
+          src="/flecha-abajo.svg"
           alt="flechaup"
           
           width={30}
@@ -235,26 +257,16 @@ export default function Home() {
 </span>
     </div>
 
-    <div id='CONTENEDORDETALLECONTACTO' className='absolute top-[1900px] w-screen bg-gradient-to-b from-sky-700 to-teal-600 text-[20px] h-[250px] scroll-smooth'>
+    <div id='CONTENEDORDETALLECONTACTO' className='absolute top-[1900px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
 <h1 className='text-center font-semibold'>Contacto</h1>
-<h2>Estamos para asesorarte en todos nuestros medios.</h2>
+<h2 className='text-sm'>Cada proyecto de seguridad electronica es unico y requiere el adecuado asesoramiento.</h2>
+<h3 className='text-sm'>No dude en contactarnos por su medio preferido. </h3>
+<h4 className='text-sm'>Horario de atencion comercial de Lunes a Viernes de 9:00 Am a 17:00 Pm</h4>
+<div className='grid grid-rows-5 grid-cols-5 w-full '>
 <span className=''>
 <a href='#CONTENEDORPRINCIPAL' >
 <Image
-          className="absolute top-[110px] left-20"
-          src="/gmail.svg"
-          alt="logogmail"
-          
-          width={50}
-          height={0}
-          priority
-        />
-        </a>
-</span>
-<span className=''>
-<a href='#CONTENEDORPRINCIPAL' >
-<Image
-          className="absolute top-[110px] left-2"
+          className="absolute bottom-20 left-2"
           src="/whatsapp.svg"
           alt="whatsapplogo"
           
@@ -267,7 +279,21 @@ export default function Home() {
 <span className=''>
 <a href='#CONTENEDORPRINCIPAL' >
 <Image
-          className="absolute top-[110px] left-40"
+          className="absolute bottom-20"
+          src="/gmail.svg"
+          alt="logogmail"
+          
+          width={50}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+
+<span className=''>
+<a href='#CONTENEDORPRINCIPAL' >
+<Image
+          className="absolute bottom-20"
           src="/telefono.svg"
           alt="logotelefono"
           
@@ -278,10 +304,36 @@ export default function Home() {
         </a>
 </span>
 <span className=''>
+<a href='#CONTENEDORDETALLECONTACTO' >
+<Image
+          className="absolute bottom-20"
+          src="/facebook.svg"
+          alt="flechaup"
+          
+          width={50}
+          height={0}
+          priority
+        />
+        </a>
+</span>   
+<span className=''>
+<a href='#CONTENEDORDETALLECONTACTO' >
+<Image
+          className="absolute bottom-20"
+          src="/instagram.svg"
+          alt="flechaup"
+          
+          width={50}
+          height={0}
+          priority
+        />
+        </a>
+</span>  
+<span className=''>
 <a href='#CONTENEDORPRINCIPAL' >
 <Image
-          className="absolute right-0"
-          src="/flecha-up.svg"
+          className="absolute left-4 bottom-2"
+          src="/flecha-arriba.svg"
           alt="flechaup"
           
           width={30}
@@ -290,7 +342,57 @@ export default function Home() {
         />
         </a>
 </span>
-    </div>   
+<span className=''>
+<a href='#CONTENEDORDETALLETIENDA' >
+<Image
+          className="absolute right-2 bottom-2"
+          src="/flecha-abajo.svg"
+          alt="flechaup"
+          
+          width={30}
+          height={0}
+          priority
+        />
+        </a>
+</span> 
+ 
+</div>
+    </div> 
+
+    <div id='CONTENEDORDETALLETIENDA' className='absolute top-[2400px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
+<h1 className='text-center font-semibold'>Tienda Virtual</h1>
+<h2>Cada proyecto de seguridad electronica es unico y requiere el adecuado asesoramiento.</h2>
+<h3>No dude en contactarnos por su medio preferido. </h3>
+<h4>Horario de atencion comercial de Lunes a Viernes de 9:00 Am a 17:00 Pm</h4>
+
+<span className=''>
+<a href='#CONTENEDORPRINCIPAL' >
+<Image
+          className="absolute left-4 bottom-1"
+          src="/flecha-arriba.svg"
+          alt="flechaup"
+          
+          width={30}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+<span className=''>
+<a href='#CONTENEDORDETALLECONTACTO' >
+<Image
+          className="absolute right-2 bottom-0"
+          src="/flecha-abajo.svg"
+          alt="flechaup"
+          
+          width={30}
+          height={0}
+          priority
+        />
+        </a>
+</span>  
+    </div> 
+
     </div>
     
     
