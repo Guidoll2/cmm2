@@ -116,7 +116,7 @@ export default function Home() {
         id="ICONO-CONTACTO"
         className="absolute right-0 top-[150px] w-[100px] h-[100px] shadow-xl transition ease-in-out delay-150 bg-stone-800 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-l-[100px] border-indigo-900 px-5 py-4"
       >
-        <a href="#contactodetail">
+        <a href="#CONTENEDORDETALLECONTACTO">
           <span className="flex ml-1">
           <Image
           className=""
@@ -161,32 +161,27 @@ export default function Home() {
           </h2>
         </a>
       </div>
-      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[1000px] w-screen bg-red-200 text-[20px] h-[300px] scroll-smooth'>
-<h1 className=''>Monitoreo de alarmas, Como funciona?</h1>
+      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[1000px] w-screen shadow-2xl bg-white text-[20px] h-[340px] scroll-smooth'>
+<h1 className='font-semibold indent-2.5 text-center font-fira-sans'>Monitoreo de alarmas</h1>
+<h2 className='font-light indent-2.5 text-center text-[15px]'>Como funciona?</h2>
 <span className='text-[13px]'>
-<ul className='p-2 list-disc list-inside'>
+<ul className='p-2 list-disc list-inside font-mono'>
   <li>
     Conectamos tu equipo de alarma a nuestra central.
   </li>
   <li>
-    Monitoreamos las señales generadas las 24 horas del dia.
+    Monitoreamos los eventos las 24 horas del dia.
   </li>
   <li>
-    Operamos tus eventos de acuerdo a los protocolos de seguridad.
+    Nuestros operadores .
   </li>
   <li>
-    Nos ponemos en contacto con las fuerzas de seguridad y/o emergencia.
+    Nos comunicamos con las fuerzas de seguridad y/o emergencia.
   </li>
   <li>
-    Recibis y gestionas las notificaciones en tu celular.
+    Obtenes acceso a nuestra APP de control y seguridad.
   </li>
-  <li>
-    Instalamos equipos con respaldo ante corte de luz.
-  </li>
-  <li>
-    Nuestras alarmas cuentan con doble via de comunicación.
-    
-  </li>
+  
   <li> Costo mensual aproximado servicio residencial: $7000.- (IVA incluido) </li>
 </ul>
 
@@ -205,10 +200,10 @@ export default function Home() {
         </a>
 </span>
     </div>
-    <div id='CONTENEDORDETALLECCTV' className='absolute top-[1200px] w-screen bg-red-200 text-[20px] h-[250px] scroll-smooth'>
-<h1 className=''>Camaras de seguridad</h1>
+    <div id='CONTENEDORDETALLECCTV' className='absolute top-[1500px] w-screen bg-gradient-to-b from-sky-700 to-teal-600 text-[20px] h-[250px] scroll-smooth'>
+<h1 className='text-center font-semibold'>Camaras de seguridad:</h1>
 <span className='text-[13px]'>
-<ul className='list-disc list-inside'>
+<ul className='list-disc list-inside indent-2.5'>
   <li>
   Instalamos equipos nuevos y/o adaptamos el tuyo.
   </li>
@@ -216,11 +211,12 @@ export default function Home() {
   Visualización en vivo y grabación las 24 horas. (Requiere internet)
   </li>
   <li>
-  Incluye APP para visualización, acceso a grabaciones, control remoto de cámaras (Depende del modelo)
+  Incluye APP de control, acceso a grabaciones, control remoto de cámaras (Depende del modelo)
   </li>
   <li>
   Sin costo mensual.
   </li>
+  
 </ul>
 
 </span>
@@ -238,6 +234,63 @@ export default function Home() {
         </a>
 </span>
     </div>
+
+    <div id='CONTENEDORDETALLECONTACTO' className='absolute top-[1900px] w-screen bg-gradient-to-b from-sky-700 to-teal-600 text-[20px] h-[250px] scroll-smooth'>
+<h1 className='text-center font-semibold'>Contacto</h1>
+<h2>Estamos para asesorarte en todos nuestros medios.</h2>
+<span className=''>
+<a href='#CONTENEDORPRINCIPAL' >
+<Image
+          className="absolute top-[110px] left-20"
+          src="/gmail.svg"
+          alt="logogmail"
+          
+          width={50}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+<span className=''>
+<a href='#CONTENEDORPRINCIPAL' >
+<Image
+          className="absolute top-[110px] left-2"
+          src="/whatsapp.svg"
+          alt="whatsapplogo"
+          
+          width={50}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+<span className=''>
+<a href='#CONTENEDORPRINCIPAL' >
+<Image
+          className="absolute top-[110px] left-40"
+          src="/telefono.svg"
+          alt="logotelefono"
+          
+          width={50}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+<span className=''>
+<a href='#CONTENEDORPRINCIPAL' >
+<Image
+          className="absolute right-0"
+          src="/flecha-up.svg"
+          alt="flechaup"
+          
+          width={30}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+    </div>   
     </div>
     
     
