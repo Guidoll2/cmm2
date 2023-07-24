@@ -42,7 +42,7 @@ export default function Home() {
   <Image src={background} alt='background-image' className='h-[1000px]' width={0} height={0}/>
   </div>
   
-  <div id='CONTENEDORCMM' className="fixed top-2 left-0 transform -translate-x-1/2 -translate-y-1/2">
+  <div id='CONTENEDORCMM' className="absolute top-2 transform -translate-x-1/2 -translate-y-1/2">
     <span className="absolute left-20 text-[40px] md:text-[80px] text-sky-600 font-light">
       CMM
     </span> 
@@ -56,7 +56,7 @@ export default function Home() {
 </div> 
 
 <div id="ICONO-ALARMAS"
-        className="absolute top-[100px] shadow-xl bg-cyan-800 w-[100px] rounded-r-[100px] h-[100px]"
+        className="absolute top-[150px] shadow-xl bg-cyan-800 w-[100px] rounded-r-[100px] h-[100px]"
       >
            
         <a href="#CONTENEDORDETALLEALARMA" className="">
@@ -79,7 +79,7 @@ export default function Home() {
       
       <div
         id="ICONO-CAMARAS"
-        className="absolute w-[100px] h-[100px] top-[300px] bg-cyan-800 to-stone-700 rounded-r-[100px]"
+        className="absolute w-[100px] h-[100px] top-[350px] bg-cyan-800 to-stone-700 rounded-r-[100px]"
       >
         <a href="#CONTENEDORDETALLECCTV">
           <span className="flex mt-4 ml-5">
@@ -114,7 +114,7 @@ export default function Home() {
     
         <div
         id="ICONO-CONTACTO"
-        className="absolute right-0 top-[100px] w-[100px] h-[100px] shadow-xl transition ease-in-out delay-150 bg-stone-800 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-l-[100px] border-indigo-900 px-5 py-4"
+        className="absolute right-0 top-[150px] w-[100px] h-[100px] shadow-xl transition ease-in-out delay-150 bg-stone-800 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-l-[100px] border-indigo-900 px-5 py-4"
       >
         <a href="#contactodetail">
           <span className="flex ml-1">
@@ -139,7 +139,7 @@ export default function Home() {
 
       <div
         id="ICONO-TIENDA"
-        className="absolute right-0 top-[300px] w-[100px] h-[100px] bg-stone-800 rounded-l-[100px]"
+        className="absolute right-0 top-[350px] w-[100px] h-[100px] bg-stone-800 rounded-l-[100px]"
       >
         <a href="#tiendavirtual">
           <span className="absolute top-[15px] left-[25px]">
