@@ -161,7 +161,7 @@ export default function Home() {
           </h2>
         </a>
       </div>
-      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[600px] w-screen bg-red-200 text-[20px] h-[300px] scroll-smooth'>
+      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[1000px] w-screen bg-red-200 text-[20px] h-[300px] scroll-smooth'>
 <h1 className=''>Monitoreo de alarmas, Como funciona?</h1>
 <span className='text-[13px]'>
 <ul className='p-2 list-disc list-inside'>
