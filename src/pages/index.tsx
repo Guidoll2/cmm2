@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import background from '../../public/plasmas.jpg'
 import { Roboto } from 'next/font/google'
+import back from '../../public/keyboard.jpg'
+import backcctv from '../../public/cctv.jpg'
 
 const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
@@ -59,7 +61,7 @@ export default function Home() {
 </div> 
 </div>
 <div id="ICONO-ALARMAS"
-        className="absolute top-[200px] left-10 shadow-2xl bg-gray-700 w-[100px] rounded-[100px] h-[100px]"
+        className="absolute top-[150px] left-10 shadow-2xl bg-gray-700 w-[100px] rounded-[100px] h-[100px]"
       >
            
         <a href="#CONTENEDORDETALLEALARMA" className="">
@@ -79,10 +81,11 @@ export default function Home() {
           </h2>
         </a>
       </div>
+
       
       <div
         id="ICONO-CAMARAS"
-        className="absolute w-[100px] left-10 h-[100px] top-[500px] shadow-2xl bg-gray-700 rounded-[100px]"
+        className="absolute w-[100px] left-10 h-[100px] top-[350px] shadow-2xl bg-gray-700 rounded-[100px]"
       >
         <a href="#CONTENEDORDETALLECCTV">
           <span className="flex mt-4 ml-7">
@@ -110,14 +113,34 @@ export default function Home() {
         </a>
       </div>     
 
+      <div id="ICONO-STECNICO"
+        className="absolute top-[550px] left-10 shadow-2xl bg-gray-700 w-[100px] rounded-[100px] h-[100px]"
+      >
+           
+        <a href="#CONTENEDORDETALLEALARMA" className="">
+          <span  className="flex ml-5 mt-2" >
+          <Image
+          className=""
+          src="/taller.svg"
+          alt="iconoalarmas"
+          width={60}
+          height={0}
+          priority
+        />
+          </span>
 
+           <h2 className={`text-[15px] ml-4 mt-0 font-light text-white`}>
+            S.Técnico
+          </h2>
+        </a>
+      </div>
 
     
 
     
         <div
         id="ICONO-CONTACTO"
-        className="absolute right-10 top-[200px] w-[100px] h-[100px] shadow-2xl transition ease-in-out delay-150 bg-stone-700 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[100px] border-indigo-900 px-5 py-4"
+        className="absolute right-10 top-[150px] w-[100px] h-[100px] shadow-2xl transition ease-in-out delay-150 bg-stone-700 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[100px] border-indigo-900 px-5 py-4"
       >
         <a href="#CONTENEDORDETALLECONTACTO">
           <span className="flex ml-1">
@@ -141,8 +164,33 @@ export default function Home() {
       </div>
 
       <div
+        id="ICONOIDENTIDAD"
+        className="absolute right-10 top-[550px] w-[100px] h-[100px] shadow-2xl transition ease-in-out delay-150 bg-stone-700 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[100px] border-indigo-900 px-5 py-4"
+      >
+        <a href="#CONTENEDORDETALLECONTACTO">
+          <span className="flex ml-1">
+          <Image
+          className=""
+          src="/capitan.svg"
+          alt="iconocctv"
+          width={50}
+          height={0}
+          priority
+        />
+          </span>
+
+          <h2
+            id="ICONO-CONTACTO"
+            className={`relative text-[15px] right-[3px] font-light text-white`}
+          >
+            Nosotros 
+          </h2>
+        </a>
+      </div>
+
+      <div
         id="ICONO-TIENDA"
-        className="absolute right-10 top-[500px] w-[100px] h-[100px] bg-stone-700 rounded-[100px]"
+        className="absolute right-10 top-[350px] w-[100px] h-[100px] bg-stone-700 rounded-[100px]"
       >
         <a href="#tiendavirtual">
           <span className="absolute top-[15px] left-[25px]">
@@ -164,11 +212,14 @@ export default function Home() {
           </h2>
         </a>
       </div>
-      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[800px] w-screen shadow-2xl bg-white text-[20px] h-[450px] scroll-smooth'>
-<h1 className='font-semibold indent-2.5 text-center font-fira-sans'>Monitoreo de alarmas</h1>
-<h2 className='font-light indent-2.5 text-center text-[15px]'>Como funciona?</h2>
+      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[800px] w-screen shadow-2xl bg-white text-[20px] h-[450px]'>
+      <div className='absolute'>
+  <Image src={back} alt='background-image' className='h-[450px] opacity-30' width={2000} height={0}/>
+  </div>
+<h1 className='font-bold indent-2.5 text-center font-fira-sans'>Monitoreo de alarmas</h1>
+<h2 className='font-bold indent-2.5 text-center text-[15px]'>Como funciona?</h2>
 <span className='text-[13px]'>
-<ul className='p-4 space-y-5 list-disc list-inside font-mono'>
+<ul className='p-4 space-y-5 list-disc list-inside font-mono font-bold'>
   <li>
     Instalamos y conectamos tu equipo de alarma a nuestra central.
   </li>
@@ -213,9 +264,12 @@ export default function Home() {
 </span>
     </div>
     <div id='CONTENEDORDETALLECCTV' className='absolute top-[1500px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
+    <div className='absolute'>
+  <Image src={backcctv} alt='background-image' className='h-[350px] opacity-40' width={2000} height={0}/>
+  </div>
 <h1 className='relative top-6 text-center font-semibold'>Camaras de seguridad:</h1>
 <span className='text-[13px]'>
-<ul className='relative top-10 space-y-5 list-disc list-inside font-mono'>
+<ul className='relative font-bold   top-10 space-y-5 list-disc list-inside font-mono'>
   <li>
   Instalamos equipos nuevos y/o adaptamos el tuyo.
   </li>
