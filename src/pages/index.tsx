@@ -38,8 +38,8 @@ export default function Home() {
         />
   </div>
  
-  <div className='fixed w-screen h-[300px]'>
-  <Image src={background} alt='background-image' className='h-[500px]' width={0} height={0}/>
+  <div className='fixed w-screen'>
+  <Image src={background} alt='background-image' className='h-[1000px]' width={0} height={0}/>
   </div>
   
   <div id='CONTENEDORCMM' className="fixed top-2 left-0 transform -translate-x-1/2 -translate-y-1/2">
