@@ -1,31 +1,49 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import background from '../../public/dots2.jpg'
+import { Roboto } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export default function Home() {
   return (
     <main
-      className={`bg-gradient-to-b from-sky-700 to-sky-300 h-[500px] ${inter.className}`} 
+      className={`bg-gradient-to-b from-sky-700 to-sky-300 h-[0px] ${inter.className}`} 
     > 
 
-    <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20'>
-    <a className='' href="#destino-somos">
-        <Image
+{/*
+<div className='fixed w-full h-[1000px]'>
+  <div className='fixed -z-1 w-full top-[0px] h-[900px]'>
+<Image src={background} alt='background-image' className='w-full' width={0} height={1000}/>
+  
+  </div>
+  </div> */}
+
+   
+    
+  <div id='CONTENEDORPRINCIPAL' className='grid grid-rows-5 grid-cols-5 w-full'>
+  <div className='fixed z-10 opacity-60 top-2'>
+    <Image
           className=""
-          src="/logosvg.svg"
-          alt="CMM Logo"
+          src="/logosinfondo.png"
+          alt="iconocctv"
           width={100}
-          height={0}
+          height={1100}
           priority
         />
-      </a>
-      </div>
-     
-  <div id='CONTENEDORPRINCIPAL' className='grid grid-rows-5 grid-cols-5 w-full'>
+  </div>
+ 
+  <div className='fixed w-screen h-[300px]'>
+  <Image src={background} alt='background-image' className='h-[500px]' width={0} height={0}/>
+  </div>
   
-  <div id='CONTENEDORCMM' className="w-screen bg-gradient-to-l from-indigo-600 to-gray-400 h-14">
-    <span className="absolute left-2 text-[40px] md:text-[80px] text-slate-800 font-raleway opacity-70">
+  <div id='CONTENEDORCMM' className="fixed top-2 left-0 transform -translate-x-1/2 -translate-y-1/2">
+    <span className="absolute left-20 text-[40px] md:text-[80px] text-sky-600 font-light">
       CMM
     </span> 
     <div id='CONTENEDORLOGOSVG' className="absolute top-0 md:w-[300px] md:top-60 ">
@@ -33,27 +51,27 @@ export default function Home() {
         </div>
   </div>
 
-<div id='CONTENEDORSEGURIDADELECTRONICA' className='absolute right-0 md:w-[300px] h-[30px] rounded-[100px] w-[200px] shadow-xl opacity-80 bg-gradient-to-l from-indigo-600 to-gray-400'>
-<h1 className='absolute top-[2px] font-arial font-extrabold md:text-xl text-[12px] p-1 md:p-4 ml-3 uppercase whitespace-nowrap font-mono'> Seguridad Electrónica</h1>
-</div>
+<div id='CONTENEDORSEGURIDADELECTRONICA' className='absolute top-[60px] left-2'>
+<h1 className='absolute top-[2px] font-light md:text-xl text-[14px] p-1 md:p-4 ml-3 uppercase whitespace-nowrap font-mono text-sky-300'> Seguridad Electrónica</h1>
+</div> 
 
 <div id="ICONO-ALARMAS"
-        className="absolute top-[100px] shadow-xl bg-gradient-to-b from-white w-[100px] rounded-[100px] h-[100px]"
+        className="absolute top-[100px] shadow-xl bg-cyan-800 w-[100px] rounded-r-[100px] h-[100px]"
       >
            
-        <a href="#alarmasmonitoreadasdetail" className="">
-          <span  className="flex ml-6 mt-4" >
+        <a href="#CONTENEDORDETALLEALARMA" className="">
+          <span  className="flex ml-5 mt-4" >
           <Image
           className=""
-          src="/alarmacasa.svg"
-          alt="iconocctv"
+          src="/alarma2.svg"
+          alt="iconoalarmas"
           width={50}
           height={0}
           priority
         />
           </span>
 
-           <h2 className={`text-[15px] ml-5 mt-1 font-semibold `}>
+           <h2 className={`text-[15px] ml-3 mt-1 font-light text-sky-300`}>
             Alarmas
           </h2>
         </a>
@@ -61,10 +79,10 @@ export default function Home() {
       
       <div
         id="ICONO-CAMARAS"
-        className="absolute w-[100px] h-[100px] top-[300px] bg-gradient-to-b from-violet-800 to-sky-700 rounded-[100px]"
+        className="absolute w-[100px] h-[100px] top-[300px] bg-cyan-800 to-stone-700 rounded-r-[100px]"
       >
-        <a href="#camarasdetail">
-          <span className="flex mt-4 ml-7">
+        <a href="#CONTENEDORDETALLECCTV">
+          <span className="flex mt-4 ml-5">
           <Image
           className=""
           src="/cctv.svg"
@@ -78,7 +96,7 @@ export default function Home() {
 
           <h2
             id="ICONO-CAMARAS"
-            className={`flex ml-7 mt-2 text-[15px] font-semibold`}
+            className={`flex ml-5 mt-1 text-[18px] font-light text-sky-300`}
           >
             CCTV
           </h2>
@@ -96,7 +114,7 @@ export default function Home() {
     
         <div
         id="ICONO-CONTACTO"
-        className="absolute right-0 top-[100px] w-[100px] h-[100px] shadow-xl transition ease-in-out delay-150 bg-gradient-to-b from-white opacity-70 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[100px] border-indigo-900 px-5 py-4 transition-colors border-gray-300 bg-gray-200"
+        className="absolute right-0 top-[100px] w-[100px] h-[100px] shadow-xl transition ease-in-out delay-150 bg-stone-800 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-l-[100px] border-indigo-900 px-5 py-4"
       >
         <a href="#contactodetail">
           <span className="flex ml-1">
@@ -112,7 +130,7 @@ export default function Home() {
 
           <h2
             id="ICONO-CONTACTO"
-            className={`relative text-[15px] right-[3px] font-semibold`}
+            className={`relative text-[15px] right-[3px] font-light text-sky-300`}
           >
             Contacto
           </h2>
@@ -121,7 +139,7 @@ export default function Home() {
 
       <div
         id="ICONO-TIENDA"
-        className="absolute right-0 top-[300px] w-[100px] h-[100px] bg-gradient-to-b from-violet-800 to-sky-700 rounded-[100px]"
+        className="absolute right-0 top-[300px] w-[100px] h-[100px] bg-stone-800 rounded-l-[100px]"
       >
         <a href="#tiendavirtual">
           <span className="absolute top-[15px] left-[25px]">
@@ -137,15 +155,92 @@ export default function Home() {
 
           <h2
             id="LEYENDA-TIENDAVIRTUAL"
-            className={`absolute top-[65px] left-[25px] text-[15px] font-semibold `}
+            className={`absolute top-[65px] left-[25px] text-[15px] font-light text-sky-300 `}
           >
             Tienda
           </h2>
         </a>
       </div>
+      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[600px] w-screen bg-red-200 text-[20px] h-[300px] scroll-smooth'>
+<h1 className=''>Monitoreo de alarmas, Como funciona?</h1>
+<span className='text-[13px]'>
+<ul className='p-2 list-disc list-inside'>
+  <li>
+    Conectamos tu equipo de alarma a nuestra central.
+  </li>
+  <li>
+    Monitoreamos las señales generadas las 24 horas del dia.
+  </li>
+  <li>
+    Operamos tus eventos de acuerdo a los protocolos de seguridad.
+  </li>
+  <li>
+    Nos ponemos en contacto con las fuerzas de seguridad y/o emergencia.
+  </li>
+  <li>
+    Recibis y gestionas las notificaciones en tu celular.
+  </li>
+  <li>
+    Instalamos equipos con respaldo ante corte de luz.
+  </li>
+  <li>
+    Nuestras alarmas cuentan con doble via de comunicación.
+    
+  </li>
+  <li> Costo mensual aproximado servicio residencial: $7000.- (IVA incluido) </li>
+</ul>
+
+</span>
+<span className=''>
+<a href='#CONTENEDORPRINCIPAL' >
+<Image
+          className="absolute right-0"
+          src="/flecha-up.svg"
+          alt="flechaup"
+          
+          width={30}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+    </div>
+    <div id='CONTENEDORDETALLECCTV' className='absolute top-[1200px] w-screen bg-red-200 text-[20px] h-[250px] scroll-smooth'>
+<h1 className=''>Camaras de seguridad</h1>
+<span className='text-[13px]'>
+<ul className='list-disc list-inside'>
+  <li>
+  Instalamos equipos nuevos y/o adaptamos el tuyo.
+  </li>
+  <li>
+  Visualización en vivo y grabación las 24 horas. (Requiere internet)
+  </li>
+  <li>
+  Incluye APP para visualización, acceso a grabaciones, control remoto de cámaras (Depende del modelo)
+  </li>
+  <li>
+  Sin costo mensual.
+  </li>
+</ul>
+
+</span>
+<span className=''>
+<a href='#CONTENEDORPRINCIPAL' >
+<Image
+          className="absolute right-0"
+          src="/flecha-up.svg"
+          alt="flechaup"
+          
+          width={30}
+          height={0}
+          priority
+        />
+        </a>
+</span>
+    </div>
     </div>
     
-
+    
 
  {/**   
 <div className="relative w-[400px] font-mono font-sans top-[150px] left-[1000px] rounded-[20px] bg-zinc-300">
@@ -154,21 +249,19 @@ export default function Home() {
       Comprometidos con tu protección.
     </span>
   </p>
-</div>
-
+</div>*/}
+{/*
 <div
   id="alarmasmonitoreadasdetail"
-  className="scroll-smooth relative top-[200px] h-[350px] w-[1100px] left-[120px] shadow-2xl border-4 border-solid rounded-3xl p-4 border-blue-900 bg-gray-300 hover:bg-gray-100"
+  className="relative h-[500px] top-[600px] shadow-2xl border-4 border-solid rounded-3xl p-4 border-blue-900 bg-gray-300 hover:bg-gray-100"
 >
-  <span className="relative h-[0px] w-[45px] top-[10px] left-[20px] inline-block transition-transform motion-reduce:transform-none">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-      <path d="M384 480c0 11.7 3.1 22.6 8.6 32H392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L490.7 166.3C447.2 181.7 416 223.2 416 272v24.6c-19.1 11.1-32 31.7-32 55.4V480zM528 240c-17.7 0-32 14.3-32 32v48h64V272c0-17.7-14.3-32-32-32zm-80 32c0-44.2 35.8-80 80-80s80 35.8 80 80v48c17.7 0 32 14.3 32 32V480c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V352c0-17.7 14.3-32 32-32V272z" />
-    </svg>
+  <span className=" h-[0px] top-[10px] left-[20px] transition-transform motion-reduce:transform-none">
+   
   </span>
-  <h2 className={`relative left-[80px] top-[10px] text-2xl font-semibold`}>
+  <h2 className={`relative left-[80px] top-[10px] text-l font-semibold`}>
     Monitoreo de alarmas ¿Cómo funciona?:
   </h2>
-  <ul className="relative top-[40px] left-[20px] space-y-5">
+  <ul className="relative top-[40px] left-[20px] space-y-3">
     <li className="">
       <span className="inline-block align-middle mr-2 text-green-500">&#10003;</span>
       Conectamos tu alarma a nuestra central brindando un servicio de monitoreo 24Hs.
@@ -191,14 +284,12 @@ export default function Home() {
     </li>
   </ul>
   <a id="FLECHAVUELTAHOME" href="#home">
-    <span className="relative h-[100px] w-[25px] top-[0px] left-[980px] inline-block">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
-      </svg>
+    <span className="absolute h-[10px] w-[5px]">
+    
     </span>
-  </a>
+</a> 
 </div>
-
+{/**  
 <div
   id="camarasdetail"
   className="relative bottom-[0px] top-[220px] h-[350px] w-[1100px] left-[120px] shadow-2xl border-4 border-solid rounded-3xl p-4 border-blue-900 bg-gray-300 hover:bg-gray-100"
