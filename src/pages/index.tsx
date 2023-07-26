@@ -36,7 +36,7 @@ export default function Home() {
   <div className='fixed z-1'>
   <Image src={background} alt='background-image' className='h-[1000px] opacity-50' width={2000} height={0}/>
   </div>
-  <div id='CONTENEDORHEADER' className='absolute top-2 bg-stone-300 w-screen h-[90px] shadow-2xl z-20'>
+  <div id='CONTENEDORHEADER' className='absolute top-2 bg-stone-300 w-screen h-[80px] shadow-2xl z-20'>
  
     {/*
    <div className='absolute w-20 h-20 right-0 top-5'>
@@ -70,7 +70,7 @@ export default function Home() {
 <h1 className='absolute top-[2px] font-light md:text-xl text-[14px] p-1 md:p-4 ml-3 uppercase whitespace-nowrap font-mono text-black'> Seguridad Electrónica</h1>
 </div> 
 </div>
-<div id='CONTENEDORICONOS' className='grid grid-rows-5 grid-cols-5 w-screen bg-stone-800 h-[500px] top-[20px] z-10'>
+<div id='CONTENEDORICONOS' className='grid grid-rows-5 grid-cols-5 w-screen bg-stone-800 h-[1000px] top-[20px] z-10'>
 <div id="ICONO-ALARMAS"
         className="absolute top-[140px] left-10 shadow-2xl bg-gray-700 w-[100px] rounded-[10px] h-[100px]"
       >
