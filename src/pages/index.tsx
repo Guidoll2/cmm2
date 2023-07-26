@@ -17,7 +17,7 @@ const roboto = Roboto({
 export default function Home() {
   return (
     <main
-      className={`bg-gradient-to-b from-sky-700 to-sky-300 h-[0px] ${inter.className}`} 
+      className={`bg-gradient-to-b from-sky-700 to-sky-300 ${inter.className}`} 
     > 
 
 {/*
@@ -38,11 +38,11 @@ export default function Home() {
   </div>
   <div id='CONTENEDORHEADER' className='absolute top-2 bg-stone-300 w-screen h-[80px] shadow-2xl z-20'>
  
-    {/*
+    
    <div className='absolute w-20 h-20 right-0 top-5'>
-   <button className='bg-red-400 rounded-[100px] w-[50px] text-[20px] checked:bg-blue-500'>Menu</button>
-</div>*/}
-   
+   <button className='bg-gradient-to-t text-sm from blue-700 to blue-500 rounded-l-[100px] shadow-2xl w-[80px] text-[20px] checked:bg-blue-500 font-roboto'>Menu</button>
+</div>
+
    
    
     <Image
@@ -70,24 +70,28 @@ export default function Home() {
 <h1 className='absolute top-[2px] font-light md:text-xl text-[14px] p-1 md:p-4 ml-3 uppercase whitespace-nowrap font-mono text-black'> Seguridad Electrónica</h1>
 </div> 
 </div>
-<div id='CONTENEDORICONOS' className='grid grid-rows-5 grid-cols-5 w-screen bg-stone-800 h-[1000px] top-[20px] z-10'>
+
+
+{/**ACA EMPIEZAN LOS ICONOS */}
+
+<div id='CONTENEDORICONOS' className='grid grid-rows-5 grid-cols-5 w-screen bg-stone-800 h-screen top-[20px] z-10'>
 <div id="ICONO-ALARMAS"
-        className="absolute top-[140px] left-10 shadow-2xl bg-gray-700 w-[100px] rounded-[10px] h-[100px]"
+        className="absolute top-[120px] left-5 shadow-2xl bg-gray-700 w-[120px] rounded-[100px] h-[120px] md:top-[250px] md:left-[100px]"
       >
            
         <a href="#CONTENEDORDETALLEALARMA" className="">
-          <span  className="flex ml-8 mt-4" >
+          <span  className="flex ml-9 mt-4" >
           <Image
           className=""
           src="/alarma2.svg"
           alt="iconoalarmas"
-          width={50}
+          width={60}
           height={0}
           priority
         />
           </span>
 
-           <h2 className={`text-[15px] ml-6 mt-1 font-light text-white`}>
+           <h2 className={`text-[15px] ml-8 mt-1 font-light text-white`}>
             Alarmas
           </h2>
         </a>
@@ -96,15 +100,15 @@ export default function Home() {
       
       <div
         id="ICONO-CAMARAS"
-        className="absolute w-[100px] left-10 h-[100px] top-[350px] shadow-2xl bg-gray-700 rounded-[10px]"
+        className="absolute w-[120px] left-5 h-[120px] top-[280px] shadow-2xl bg-gray-700 rounded-[100px]"
       >
         <a href="#CONTENEDORDETALLECCTV">
-          <span className="flex mt-4 ml-7">
+          <span className="flex mt-4 ml-8">
           <Image
           className=""
           src="/cctv.svg"
           alt="iconocctv"
-          width={50}
+          width={60}
           height={0}
           priority
         />
@@ -113,7 +117,7 @@ export default function Home() {
 
           <h2
             id="ICONO-CAMARAS"
-            className={`flex ml-7 mt-1 text-[18px] font-light text-white`}
+            className={`flex ml-8 mt-1 text-[18px] font-light text-white`}
           >
             CCTV
           </h2>
@@ -124,34 +128,33 @@ export default function Home() {
         </a>
       </div>     
 
-    {/*  <div id="ICONO-STECNICO"
-        className="absolute top-[370px] left-10 shadow-2xl bg-gray-700 w-[100px] rounded-[100px] h-[100px]"
+     <div id="ICONO-STECNICO"
+        className="absolute top-[440px] left-5 shadow-2xl bg-gray-700 w-[120px] rounded-[100px] h-[120px]"
       >
            
-        <a href="#CONTENEDORDETALLEALARMA" className="">
+        <a href='tel:+541133324034' className="">
           <span  className="flex ml-5 mt-2" >
           <Image
           className=""
           src="/taller.svg"
           alt="iconoalarmas"
-          width={60}
+          width={80}
           height={0}
           priority
         />
           </span>
 
-           <h2 className={`text-[15px] ml-4 mt-0 font-light text-white`}>
+           <h2 className={`text-[15px] ml-6 mt-0 font-light text-white`}>
             S.Técnico
           </h2>
         </a>
-</div> */}
-
+</div> 
     
 
     
         <div
         id="ICONO-CONTACTO"
-        className="absolute right-10 top-[140px] w-[100px] h-[100px] shadow-2xl transition ease-in-out delay-150 bg-stone-700 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[10px] border-indigo-900 px-5 py-4"
+        className="absolute right-5 top-[120px] w-[120px] h-[120px] shadow-2xl transition ease-in-out delay-150 bg-stone-700 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[100px] border-indigo-900 px-5 py-4"
       >
         <a href="#CONTENEDORDETALLECONTACTO">
           <span className="flex ml-1">
@@ -159,32 +162,31 @@ export default function Home() {
           className=""
           src="/contact-us.svg"
           alt="iconocctv"
-          width={50}
+          width={70}
           height={0}
           priority
         />
           </span>
 
           <h2
-            id="ICONO-CONTACTO"
-            className={`relative text-[15px] right-[3px] font-light text-white`}
+            className={`absolute text-[15px] ml-2 font-light text-white`}
           >
             Contacto
           </h2>
         </a>
       </div>
 
-  {/*    <div
+    <div
         id="ICONOIDENTIDAD"
-        className="absolute right-40 top-[250px] w-[100px] h-[100px] shadow-2xl transition ease-in-out delay-150 bg-stone-700 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[100px] border-indigo-900 px-5 py-4"
+        className="absolute right-5 top-[440px] w-[120px] h-[120px] shadow-2xl transition ease-in-out delay-150 bg-stone-700 hover:-translate-y-1 hover:scale-110 hover:opacity-100 duration-300 group shadow-2xl rounded-[100px] border-indigo-900 px-5 py-4"
       >
-        <a href="#CONTENEDORDETALLECONTACTO">
+        <a href="#NOSOTROSDETAIL">
           <span className="flex ml-1">
           <Image
           className=""
           src="/capitan.svg"
           alt="iconocctv"
-          width={50}
+          width={70}
           height={0}
           priority
         />
@@ -192,16 +194,16 @@ export default function Home() {
 
           <h2
             id="ICONO-CONTACTO"
-            className={`relative text-[15px] right-[3px] font-light text-white`}
+            className={`absolute text-[15px] ml-2 font-light text-white`}
           >
             Nosotros 
           </h2>
         </a>
-      </div> */}
+      </div> 
 
       <div
         id="ICONO-TIENDA"
-        className="absolute right-10 top-[350px] w-[100px] h-[100px] bg-stone-700 rounded-[10px]"
+        className="absolute right-5 top-[290px] w-[120px] h-[120px] bg-stone-700 rounded-[100px]"
       >
         <a href="#CONTENEDORDETALLETIENDA">
           <span className="absolute top-[15px] left-[25px]">
@@ -209,7 +211,7 @@ export default function Home() {
           className=""
           src="/tienda.svg"
           alt="iconocctv"
-          width={50}
+          width={70}
           height={0}
           priority
         />
@@ -217,14 +219,17 @@ export default function Home() {
 
           <h2
             id="LEYENDA-TIENDAVIRTUAL"
-            className={`absolute top-[65px] left-[25px] text-[15px] font-light text-white `}
+            className={`absolute top-[85px] left-[35px] text-[15px] font-light text-white `}
           >
             Tienda
           </h2>
         </a>
       </div>
       </div>
-      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[600px] w-screen shadow-2xl bg-white text-[20px] h-[450px]'>
+
+{/** ACA EMPIEZAN LOS RECUADROS DE DETALLE */}
+
+      <div id='CONTENEDORDETALLEALARMA' className='absolute top-[700px] w-screen shadow-2xl bg-white text-[20px] h-[450px]'>
       <div className='absolute'>
   <Image src={back} alt='background-image' className='h-[450px] opacity-30' width={2000} height={0}/>
   </div>
@@ -275,7 +280,9 @@ export default function Home() {
         </a>
 </span>
     </div>
-    <div id='CONTENEDORDETALLECCTV' className='absolute top-[1100px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
+
+
+    <div id='CONTENEDORDETALLECCTV' className='absolute top-[1200px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
     <div className='absolute'>
   <Image src={backcctv} alt='background-image' className='h-[350px] opacity-40' width={2000} height={0}/>
   </div>
@@ -326,7 +333,7 @@ export default function Home() {
 </span>
     </div>
    
-   <div id='CONTENEDORDETALLECONTACTO' className='absolute top-[1500px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
+   <div id='CONTENEDORDETALLECONTACTO' className='absolute top-[1600px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
    <Image src={backcontact} alt='background-image' className='h-[350px] opacity-40' width={2000} height={0}/>
 <h1 className='absolute top-5 text-center font-bold left-20'>Contacto:</h1>
 <h2 className='absolute top-20 text-m font-semibold'>¿Dudas? ¿Consultas? ¡No dudes en contactarnos!, nuestro horario de atencion es de Lunes a Viernes de 9:00 a 17:00</h2>
@@ -427,23 +434,27 @@ export default function Home() {
 </div>
     </div> 
 
-    <div id='CONTENEDORDETALLETIENDA' className='absolute top-[1900px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
+    <div id='CONTENEDORDETALLETIENDA' className='absolute top-[2000px] w-screen bg-white text-[20px] h-[350px] scroll-smooth'>
     <Image src={backtienda} alt='background-image' className='h-[350px] opacity-50 w-screen' width={2000} height={0}/>
 <h1 className='absolute top-5 font-semibold left-20'>Tienda Virtual:</h1>
 <h2 className='absolute top-20 left-5'>Conoce nuestros productos y servicios:</h2>
-<span className=''>
+<span className='absolute text-center'>
 <a href='https://guidoll.mercadoshops.com.ar/' target='_blank' >
 <Image
-          className="absolute bottom-20 left-[150px]"
+          className="relative bottom-60 left-40"
           src="/tiendab.svg"
           alt="flechaup"
           
-          width={100}
+          width={200}
           height={0}
           priority
         />
         </a>
 </span>  
+
+
+
+
 <span className=''>
 <a href='#CONTENEDORPRINCIPAL' >
 <Image
@@ -474,11 +485,11 @@ export default function Home() {
 
     </div>
 
-    <div className='absolute bg-red-300 w-screen h-[200px] top-[2300px]'>
-<h1 className='text-center font-bold font-mono'>12 Años cuidando tus bienes.</h1>
+    <div id='NOSOTROSDETAIL' className='absolute bg-stone-200 w-screen h-[100px] top-[2400px]'>
+<h1 className='text-center font-bold font-mono'>Mas de 12 Años que CMM cuidando tus bienes.</h1>
     </div>
     
-<footer id="FOOTERDELAMOR" className="flex fixed bottom-0 grid grid-rows-1 place-items-center w-full border-t bg-gradient-to-r from-blue-500 to-gray-500">
+<footer id="FOOTERDELAMOR" className="relative fixed grid grid-rows-1 place-items-center w-full border-t bg-gradient-to-r from-blue-500 to-gray-500">
   <p className="text-black-500 text-[12px]">© 2023 <span className='font-bold'>CMM</span>. San Miguel del Monte - Cañuelas - Lobos.</p>
   <span className=''>
     
