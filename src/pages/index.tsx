@@ -383,7 +383,7 @@ Un sistema de camaras es un complemento perfecto para nuestro servicio de alarma
           src="/tiendanegro.svg"
           alt="tienda"
           
-          width={30}
+          width={50}
           height={0}
           priority
         />
@@ -395,7 +395,7 @@ Un sistema de camaras es un complemento perfecto para nuestro servicio de alarma
 <span className=''>
 <a href='#CONTENEDORPRINCIPAL' >
 <Image
-          className="absolute right-5 bottom-20 "
+          className="absolute right-5 bottom-2 "
           src="/flecha-arribab.svg"
           alt="flechaup"
           
@@ -506,26 +506,11 @@ Un sistema de camaras es un complemento perfecto para nuestro servicio de alarma
           priority
         />
         </a>
-</span>
-<span className=''>
-<a href='#CONTENEDORDETALLETIENDA' >
-<Image
-          className="absolute bottom-2 right-4"
-          src="/flecha-abajob.svg"
-          alt="flechaup"
-          
-          width={30}
-          height={0}
-          priority
-        />
-        </a>
-</span> 
- 
-
+</span >
     </div> )}
 
     {showTiendaDetalle && (
-    <div id='CONTENEDORDETALLETIENDA' className='absolute top-[850px] w-screen bg-gradient-to-b from-blue-950 to-blue-700 text-[20px] h-[400px] shadow-2xl'>
+    <div id='CONTENEDORDETALLETIENDA' className='absolute shadow-2xl top-[850px] w-screen bg-gradient-to-b from-blue-950 to-blue-700 text-[20px] h-[450px]'>
     <div className='absolute'>
     <Image src={backcontact} alt='background-image' className='relative right-[130px] h-[70px] opacity-40' width={0} height={0}/>
     </div>
@@ -555,11 +540,11 @@ Un sistema de camaras es un complemento perfecto para nuestro servicio de alarma
 <span className=''>
 <a href='#CONTENEDORPRINCIPAL' >
 <Image
-          className="absolute right-5 bottom-20"
+          className="absolute right-4 bottom-20"
           src="/flecha-arribab.svg"
           alt="flechaup"
           
-          width={35}
+          width={40}
           height={0}
           priority
         />
@@ -585,7 +570,7 @@ Un sistema de camaras es un complemento perfecto para nuestro servicio de alarma
  
   </h2>
 
-<span className='absolute right-5 bottom-20'>
+<span className='absolute left-5 bottom-20'>
 <a href='https://www.instagram.com/alarmascmm/' target='_blank' >
 <Image
           className=""
@@ -602,7 +587,7 @@ Un sistema de camaras es un complemento perfecto para nuestro servicio de alarma
 <span className=''>
 <a href='https://www.facebook.com/CMM.ALARMAS' target='_blank' >
 <Image
-          className="absolute right-20 bottom-20"
+          className="absolute left-20 bottom-20"
           src="/facebookb.svg"
           alt="logofacebook"
           
@@ -616,7 +601,7 @@ Un sistema de camaras es un complemento perfecto para nuestro servicio de alarma
 <span className=''>
 <a href='#CONTENEDORPRINCIPAL' >
 <Image
-          className="absolute left-4 bottom-20"
+          className="absolute right-5 bottom-20"
           src="/flecha-arribab.svg"
           alt="flechaup"
           
