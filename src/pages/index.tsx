@@ -312,6 +312,7 @@ className="absolute top-[60px] right-0 shadow-2xl w-[90px] rounded-l-[100px] bg-
       <div className='absolute'>
       <Image src={backcontact} alt='background-image' className='flex items-center justify-center h-screen opacity-20' width={2000} height={0}/>
   </div>
+  <div className='absolute h-[650px]'>
 <h1 className='font-bold flex items-center justify-center h-20 uppercase text-gray-100 text-2xl font-sans'>Monitoreo de alarmas</h1>
 <span className='text-[18px]'>
 <p className='text-[15px] text-gray-200 p-5'>
@@ -354,7 +355,7 @@ podrás armar y desarmar tu alarma fácilmente, ¡todo desde la palma de tu mano
         />
         </a>
 </span>
-
+</div>
     </div> )}
 
     {showCCTVDetalle && (
